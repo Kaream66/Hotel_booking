@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:hotel_app/core/colors.dart';
 import 'package:hotel_app/core/routs.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -28,11 +29,8 @@ class _SplashViewBodyState extends State<SplashViewBody> {
 
   @override
   Widget build(BuildContext context) {
-    const backgroundColor = Color(0xff222220);
-    const ringColor = Color(0xffE87461);
-
     return Scaffold(
-      backgroundColor: backgroundColor,
+      backgroundColor: AppColors.backgroundColor,
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -46,7 +44,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
                   height: 190,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    border: Border.all(color: ringColor.withValues(alpha: 0.35), width: 2),
+                    border: Border.all(color: AppColors.ringColor, width: 2),
                   ),
                 ),
                 Container(
@@ -54,14 +52,14 @@ class _SplashViewBodyState extends State<SplashViewBody> {
                   height: 154,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    border: Border.all(color: ringColor.withValues(alpha: 0.6), width: 2),
+                    border: Border.all(color: AppColors.ringColor, width: 2),
                   ),
                 ),
                 Container(
                   width: 118,
                   height: 118,
-                  decoration: BoxDecoration(shape: BoxShape.circle, color: ringColor),
-                  child: const Icon(Icons.hotel_rounded, color: backgroundColor, size: 54),
+                  decoration: BoxDecoration(shape: BoxShape.circle, color: AppColors.ringColor),
+                  child: Icon(Icons.hotel_rounded, color: AppColors.backgroundColor, size: 54),
                 ),
               ],
             ),
