@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hotel_app/core/routs.dart';
-import 'package:hotel_app/features/splash/views/splash_view.dart';
+import 'package:hotel_app/features/splash/presentation/views/splash_view.dart';
 
 void main() {
   runApp(MyApp());

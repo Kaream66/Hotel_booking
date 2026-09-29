@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:hotel_app/features/onBoarding/views/onboarding_view.dart';
+import 'package:hotel_app/features/onBoarding/presentation/views/onboarding_view.dart';
 import 'package:hotel_app/main.dart';
 
 void main() {
