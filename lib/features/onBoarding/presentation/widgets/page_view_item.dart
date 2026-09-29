@@ -7,27 +7,34 @@ class PageViewItem extends StatelessWidget {
   final String subTitle;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image.asset(image, fit: BoxFit.fill),
-        SizedBox(height: 20),
-        Text(
-          title,
-          style: TextStyle(
-            color: Color(0xffE4D8C3),
-            fontFamily: 'Playfair Display',
-            fontSize: 34,
-            fontWeight: FontWeight.bold,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Expanded(
+            child: Image.asset(image, width: double.infinity, fit: BoxFit.contain),
           ),
-        ),
-        SizedBox(height: 20),
-
-        Text(
-          subTitle,
-          style: TextStyle(color: Color(0xffC1C1C1), fontSize: 16),
-          textAlign: TextAlign.center,
-        ),
-      ],
+          const SizedBox(height: 20),
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Color(0xffE4D8C3),
+              fontFamily: 'Playfair Display',
+              fontSize: 34,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            subTitle,
+            style: const TextStyle(color: Color(0xffC1C1C1), fontSize: 16),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 24),
+        ],
+      ),
     );
   }
 }

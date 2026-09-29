@@ -27,4 +27,16 @@ void main() {
 
     expect(find.byType(OnboardingView), findsOneWidget);
   });
+
+  testWidgets('Swipes between the two onboarding pages', (WidgetTester tester) async {
+    await tester.pumpWidget(const OnboardingView());
+
+    expect(find.text('Live Space For You.'), findsOneWidget);
+    expect(find.text('Find Your Next Stay.'), findsNothing);
+
+    await tester.drag(find.byType(PageView), const Offset(-400, 0));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Find Your Next Stay.'), findsOneWidget);
+  });
 }

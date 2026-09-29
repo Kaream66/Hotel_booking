@@ -3,7 +3,6 @@ import 'package:hotel_app/features/onBoarding/presentation/widgets/onboarding_vi
 
 class OnboardingView extends StatelessWidget {
   const OnboardingView({super.key});
-
   @override
   Widget build(BuildContext context) {
     return OnboardingViewBody();
