@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_app/core/routs.dart';
 
 import '../colors.dart';
 
