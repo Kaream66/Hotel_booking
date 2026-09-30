@@ -38,7 +38,7 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
               ),
               SizedBox(height: 10),
               Text(
-                'Enter to a Jiva Space Account to \n start discover a bunch of Live \n Spaces waiting for you.',
+                'Create a Jiva Space Account to \n start discover a bunch of Live \n Spaces waiting for you.',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontFamily: 'Playfair Display', color: AppColors.primaryFontColor),
               ),
