@@ -107,9 +107,10 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
                   children: [
                     Image.asset('assets/images/google_image.png'),
                     SizedBox(width: 10),
-                    Text('Login with Google', style: TextStyle(color: AppColors.primaryFontColor)),
+                    Text('SignUp with Google', style: TextStyle(color: AppColors.primaryFontColor)),
                   ],
                 ),
+                routeName: Routes.certificationCodeRoute,
               ),
               SizedBox(height: 8),
               LoginButton(
@@ -118,9 +119,10 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
                   children: [
                     Image.asset('assets/images/apple_image.png'),
                     SizedBox(width: 10),
-                    Text('Login with Apple', style: TextStyle(color: AppColors.primaryFontColor)),
+                    Text('SignUp with Apple', style: TextStyle(color: AppColors.primaryFontColor)),
                   ],
                 ),
+                routeName: Routes.certificationCodeRoute,
               ),
             ],
           ),
