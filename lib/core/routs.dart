@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_app/features/forgot_password/forgot_password_view.dart';
+import 'package:hotel_app/features/forgot_password/views/forgot_password_view.dart';
 import 'package:hotel_app/features/login/views/login_view.dart';
 import 'package:hotel_app/features/onBoarding/presentation/views/onboarding_view.dart';
 import 'package:hotel_app/features/signUp/views/cerification_code_view.dart';
