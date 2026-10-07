@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
 
-class HomeViewBody extends StatefulWidget {
+class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 
   @override
-  State<HomeViewBody> createState() => _HomeViewBodyState();
-}
-
-class _HomeViewBodyState extends State<HomeViewBody> {
-  @override
   Widget build(BuildContext context) {
-    return Container();
+    return const SizedBox();
   }
 }

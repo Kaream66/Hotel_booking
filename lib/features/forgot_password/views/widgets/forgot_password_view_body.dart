@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hotel_app/core/colors.dart';
 import 'package:hotel_app/core/widgets/custom_button.dart';
 import 'package:hotel_app/core/widgets/custom_text_field.dart';
-import 'package:hotel_app/core/widgets/login_button.dart';
 import 'package:hotel_app/core/widgets/logo_widget.dart';
 
 class ForgotPasswordViewBody extends StatelessWidget {
