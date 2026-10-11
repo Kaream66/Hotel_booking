@@ -11,8 +11,20 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.backgroundColor,
       appBar: AppBar(
-        title: LogoWidget(),
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.notifications))],
+        backgroundColor: AppColors.backgroundColor,
+        foregroundColor: AppColors.primaryFontColor,
+        surfaceTintColor: Colors.transparent,
+        elevation: 0,
+        scrolledUnderElevation: 0,
+        titleSpacing: 20,
+        title: const LogoWidget(),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            tooltip: 'Notifications',
+            icon: Icon(Icons.notifications_none_rounded, color: AppColors.ringColor),
+          ),
+        ],
       ),
       body: const HomeViewBody(),
     );
