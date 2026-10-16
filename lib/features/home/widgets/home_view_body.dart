@@ -89,6 +89,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                       SizedBox(height: 20),
                       PopularHotelItem(),
                       PopularHotelItem(),
+
                     ],
                   ),
                 ),

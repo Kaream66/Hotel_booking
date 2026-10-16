@@ -7,6 +7,8 @@ import 'package:hotel_app/features/signUp/views/cerification_code_view.dart';
 import 'package:hotel_app/features/signUp/views/signp_view.dart';
 import 'package:hotel_app/features/splash/presentation/views/splash_view.dart';
 
+import '../features/home/views/hotel_details_view.dart';
+
 class Routes {
   static const String onBoardingRoute = '/onBoarding';
   static const String splashRoute = '/splash';
@@ -14,6 +16,8 @@ class Routes {
   static const String signUpRoute = '/signUp';
   static const String forgotPasswordRoute = '/forgotPassword';
   static const String certificationCodeRoute = '/certificationCode';
+  static const String hotelDetailsRoute = '/hotelDetails';
+
 }
 
 class RouterGenerator {
@@ -31,6 +35,8 @@ class RouterGenerator {
         return MaterialPageRoute(builder: (context) => const ForgotPasswordView());
       case Routes.certificationCodeRoute:
         return MaterialPageRoute(builder: (context) => const CertificationCodeView());
+      case Routes.hotelDetailsRoute :
+        return MaterialPageRoute(builder: (context) => const HotelDetailsView());
 
       default:
         return null;
