@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:hotel_app/features/forgot_password/views/forgot_password_view.dart';
+import 'package:hotel_app/features/home/views/home_view.dart';
 import 'package:hotel_app/features/login/views/login_view.dart';
 import 'package:hotel_app/features/onBoarding/presentation/views/onboarding_view.dart';
 import 'package:hotel_app/features/signUp/views/cerification_code_view.dart';
@@ -17,6 +18,7 @@ class Routes {
   static const String forgotPasswordRoute = '/forgotPassword';
   static const String certificationCodeRoute = '/certificationCode';
   static const String hotelDetailsRoute = '/hotelDetails';
+  static const String homeViewRoute = '/homeView';
 
 }
 
@@ -35,6 +37,8 @@ class RouterGenerator {
         return MaterialPageRoute(builder: (context) => const ForgotPasswordView());
       case Routes.certificationCodeRoute:
         return MaterialPageRoute(builder: (context) => const CertificationCodeView());
+      case Routes.homeViewRoute:
+        return MaterialPageRoute(builder: (context) => const HomeView());
       case Routes.hotelDetailsRoute :
         return MaterialPageRoute(builder: (context) => const HotelDetailsView());
 

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HomeImageCard extends StatelessWidget {
-  const HomeImageCard({required this.image});
+  const HomeImageCard({super.key, required this.image});
+
 
   final String image;
 

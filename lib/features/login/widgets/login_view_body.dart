@@ -96,7 +96,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                     Text('Login with Google', style: TextStyle(color: AppColors.primaryFontColor)),
                   ],
                 ),
-                routeName: '',
+                routeName: Routes.homeViewRoute,
               ),
               SizedBox(height: 8),
               LoginButton(
@@ -108,7 +108,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                     Text('Login with Apple', style: TextStyle(color: AppColors.primaryFontColor)),
                   ],
                 ),
-                routeName: '',
+                routeName: Routes.homeViewRoute,
               ),
             ],
           ),
