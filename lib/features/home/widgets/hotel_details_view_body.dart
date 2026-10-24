@@ -5,12 +5,10 @@ class HotelDetailsViewBody extends StatefulWidget {
   const HotelDetailsViewBody({super.key});
 
   @override
-  State<HotelDetailsViewBody> createState() =>
-      _HotelDetailsViewBodyState();
+  State<HotelDetailsViewBody> createState() => _HotelDetailsViewBodyState();
 }
 
-class _HotelDetailsViewBodyState
-    extends State<HotelDetailsViewBody> {
+class _HotelDetailsViewBodyState extends State<HotelDetailsViewBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,11 +23,7 @@ class _HotelDetailsViewBodyState
           color: AppColors.ringColor,
         ),
         actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.more_horiz),
-            color: AppColors.ringColor,
-          ),
+          IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz), color: AppColors.ringColor),
         ],
       ),
       body: Padding(
@@ -41,10 +35,7 @@ class _HotelDetailsViewBodyState
               SizedBox(
                 height: 300,
                 width: double.infinity,
-                child: Image.asset(
-                  'assets/images/card_photo2.png',
-                  fit: BoxFit.cover,
-                ),
+                child: Image.asset('assets/images/card_photo2.png', fit: BoxFit.cover),
               ),
               SizedBox(height: 20),
               Text(
@@ -71,48 +62,30 @@ class _HotelDetailsViewBodyState
                 children: [
                   Padding(
                     padding: EdgeInsets.only(right: 8),
-                    child: Icon(
-                      Icons.star,
-                      color: AppColors.ringColor,
-                    ),
+                    child: Icon(Icons.star, color: AppColors.ringColor),
                   ),
                   Text(
                     'Rate Number',
-                    style: TextStyle(
-                      color: AppColors.primaryFontColor,
-                      fontSize: 18,
-                    ),
+                    style: TextStyle(color: AppColors.primaryFontColor, fontSize: 18),
                   ),
                 ],
               ),
               SizedBox(height: 20),
               Text(
                 'Hotel Location',
-                style: TextStyle(
-                  color: AppColors.primaryFontColor,
-                  fontSize: 18,
-                ),
+                style: TextStyle(color: AppColors.primaryFontColor, fontSize: 18),
               ),
               SizedBox(height: 20),
-              Divider(
-                color: AppColors.ringColor,
-                thickness: 2,
-              ),
+              Divider(color: AppColors.ringColor, thickness: 2),
               SizedBox(height: 20),
               Text(
                 'About Hotel',
-                style: TextStyle(
-                  color: AppColors.primaryFontColor,
-                  fontSize: 24,
-                ),
+                style: TextStyle(color: AppColors.primaryFontColor, fontSize: 24),
               ),
               SizedBox(height: 20),
               Text(
                 'Hotel Description',
-                style: TextStyle(
-                  color: AppColors.primaryFontColor,
-                  fontSize: 18,
-                ),
+                style: TextStyle(color: AppColors.primaryFontColor, fontSize: 18),
               ),
               SizedBox(height: 20),
 
@@ -123,9 +96,7 @@ class _HotelDetailsViewBodyState
                     child: Container(
                       decoration: BoxDecoration(
                         color: AppColors.ringColor,
-                        borderRadius: BorderRadius.circular(
-                          12,
-                        ),
+                        borderRadius: BorderRadius.circular(12),
                       ),
 
                       child: Row(
@@ -134,22 +105,19 @@ class _HotelDetailsViewBodyState
                             padding: EdgeInsetsGeometry.all(12),
                             child: Text(
                               'Reservation Price',
-                              style: TextStyle(
-                                color:
-                                    AppColors.backgroundColor,
-                                fontSize: 18,
-                              ),
+                              style: TextStyle(color: AppColors.backgroundColor, fontSize: 18),
                             ),
-                            
                           ),
-                          Icon(Icons.monetization_on,color: Colors.black,)
+                          Icon(Icons.monetization_on, color: Colors.black),
                         ],
                       ),
                     ),
                   ),
                   SizedBox(width: 20),
                   ElevatedButton(
-                    style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(AppColors.ringColor)),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(AppColors.ringColor),
+                    ),
                     onPressed: () async {
                       final date = await showDatePicker(
                         barrierColor: AppColors.ringColor,
@@ -158,15 +126,10 @@ class _HotelDetailsViewBodyState
                         firstDate: DateTime(2020),
                         lastDate: DateTime(2035),
                       );
-
-
                     },
                     child: Text(
                       'Book Now',
-                      style: TextStyle(
-                        color: AppColors.backgroundColor,
-                        fontSize: 18,
-                      ),
+                      style: TextStyle(color: AppColors.backgroundColor, fontSize: 18),
                     ),
                   ),
                 ],

@@ -50,6 +50,15 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
       builder: (context, state) {
         final isLoading = state is SignUpCubitLoading;
         return Scaffold(
+          appBar: AppBar(
+            backgroundColor: AppColors.backgroundColor,
+            leading: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(Icons.arrow_back_ios_new_sharp, color: AppColors.ringColor),
+            ),
+          ),
           backgroundColor: AppColors.backgroundColor,
           body: SafeArea(
             child: SingleChildScrollView(
