@@ -116,9 +116,7 @@ class _HotelDetailsViewBodyState extends State<HotelDetailsViewBody> {
                   ),
                   SizedBox(width: 20),
                   ElevatedButton(
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(AppColors.ringColor),
-                    ),
+                    style: ElevatedButton.styleFrom(backgroundColor: AppColors.ringColor),
                     onPressed: () async {
                       final DateTime? date = await showDatePicker(
                         barrierColor: AppColors.ringColor,
