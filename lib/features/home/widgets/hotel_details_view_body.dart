@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hotel_app/core/colors.dart';
+import 'package:hotel_app/core/routs.dart';
 
 class HotelDetailsViewBody extends StatefulWidget {
   const HotelDetailsViewBody({super.key});
@@ -119,13 +120,17 @@ class _HotelDetailsViewBodyState extends State<HotelDetailsViewBody> {
                       backgroundColor: MaterialStateProperty.all<Color>(AppColors.ringColor),
                     ),
                     onPressed: () async {
-                      final date = await showDatePicker(
+                      final DateTime? date = await showDatePicker(
                         barrierColor: AppColors.ringColor,
                         context: context,
                         initialDate: DateTime.now(),
                         firstDate: DateTime(2020),
                         lastDate: DateTime(2035),
                       );
+                      if (date != null) {
+                        // ignore: use_build_context_synchronously
+                        Navigator.pushReplacementNamed(context, Routes.paymentViewRoute);
+                      }
                     },
                     child: Text(
                       'Book Now',

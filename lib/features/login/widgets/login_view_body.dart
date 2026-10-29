@@ -41,6 +41,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
       listener: (context, state) {
         if (state is LoginSuccess) {
           Navigator.pushReplacementNamed(context, Routes.homeViewRoute);
+          // ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Login successful')));
         } else if (state is LoginFailure) {
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(state.message)));
         }
